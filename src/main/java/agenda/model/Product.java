@@ -2,8 +2,13 @@ package agenda.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
 	
+	@Id
 	private int id;
 	private String nombre;
 	private String descripcion;
