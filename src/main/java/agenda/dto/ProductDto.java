@@ -1,38 +1,20 @@
-package agenda.model;
+package agenda.dto;
 
 import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+public class ProductDto {
 
-
-@Entity
-public class Product {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String nombre;
-	private int cantDocumentos;
 	private String descripcion;
+	private int cantDocumentos;
 	private Date fechaInicio;
 	private Date fechaFin;
+	private Date fechaCreacion;
+	private int clientId;
 	
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date fechaCreacion = new Date();
-	
-    @ManyToOne
-	@JoinColumn(name = "id_client", nullable= false)
-    private Client client;
-	
-	public Product( ) {
+	public ProductDto() {
+		
 	}
 
 	public int getId() {
@@ -59,7 +41,7 @@ public class Product {
 		this.descripcion = descripcion;
 	}
 
-
+	
 
 	public int getCantDocumentos() {
 		return cantDocumentos;
@@ -85,13 +67,12 @@ public class Product {
 		this.fechaFin = fechaFin;
 	}
 
-	@JsonIgnore
-	public Client getClient() {
-		return client;
+	public int getClientId() {
+		return clientId;
 	}
 
-	public void setClient(Client client) {
-		this.client = client;
+	public void setClientId(int clientId) {
+		this.clientId = clientId;
 	}
 
 	public Date getFechaCreacion() {
@@ -101,9 +82,7 @@ public class Product {
 	public void setFechaCreacion(Date fechaCreacion) {
 		this.fechaCreacion = fechaCreacion;
 	}
-
 	
-
+	 
 	
-
 }

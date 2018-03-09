@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <mapping map-id="clientToClientDTO">
+        <class-a>agenda.model.Client</class-a>
+        <class-b>agenda.dto.ClientDto</class-b>
+        <field>
+            <a is-accessible="true">id</a>
+            <b is-accessible="true">id</b>
+        </field>
+        <field>
+            <a is-accessible="true">ruc</a>
+            <b is-accessible="true">ruc</b>
+        </field>
+        <field>
+            <a is-accessible="true">descripcionSocial</a>
+            <b is-accessible="true">descripcionSocial</b>
+        </field>
+        <field>
+            <a is-accessible="true">direccion</a>
+            <b is-accessible="true">direccion</b>
+        </field>
+<!--         <field>
+            <a is-accessible="true">contacts</a>
+            <b is-accessible="true">contacts</b>
+        </field> -->
+<!--         <field>
+         	<a is-accessible="true">products</a>
+            <b is-accessible="true">products</b>
+        </field> -->
+
+    </mapping>
+    <mapping map-id="clientDTOToClient">
+        <class-a>agenda.dto.ClientDto</class-a>
+        <class-b>agenda.model.Client</class-b>
+        
+        <field>
+            <a is-accessible="true">id</a>
+            <b is-accessible="true">id</b>
+        </field>
+        <field>
+            <a is-accessible="true">ruc</a>
+            <b is-accessible="true">ruc</b>
+        </field>
+        <field>
+            <a is-accessible="true">descripcionSocial</a>
+            <b is-accessible="true">descripcionSocial</b>
+        </field>
+        <field>
+            <a is-accessible="true">direccion</a>
+            <b is-accessible="true">direccion</b>
+        </field>
+<!--         <field>
+            <a is-accessible="true">contacts</a>
+            <b is-accessible="true">contacts</b>
+        </field> -->
+<!--         <field>
+         	<a is-accessible="true">products</a>
+            <b is-accessible="true">products</b>
+        </field> -->
+
+    </mapping>
+    <mapping map-id="contactToContactDTO">
+        <class-a>agenda.model.Contact</class-a>
+        <class-b>agenda.dto.ContactDto</class-b>
+        <field>
+            <a is-accessible="true">id</a>
+            <b is-accessible="true">id</b>
+        </field>
+        <field>
+            <a is-accessible="true">nombre</a>
+            <b is-accessible="true">nombre</b>
+        </field>
+        <field>
+            <a is-accessible="true">dni</a>
+            <b is-accessible="true">dni</b>
+        </field>
+        <field>
+            <a is-accessible="true">telefono</a>
+            <b is-accessible="true">telefono</b>
+        </field>
+		<field>
+            <a is-accessible="true">clientId</a>
+            <b is-accessible="true">clientId</b>
+        </field>
+    </mapping>
+    <mapping map-id="contactDTOToContact">
+    	<class-a>agenda.dto.ContactDto</class-a>
+        <class-b>agenda.model.Contact</class-b>
+        
+        <field>
+            <a is-accessible="true">id</a>
+            <b is-accessible="true">id</b>
+        </field>
+        <field>
+            <a is-accessible="true">nombre</a>
+            <b is-accessible="true">nombre</b>
+        </field>
+        <field>
+            <a is-accessible="true">dni</a>
+            <b is-accessible="true">dni</b>
+        </field>
+        <field>
+            <a is-accessible="true">telefono</a>
+            <b is-accessible="true">telefono</b>
+        </field>
+		<field>
+            <a is-accessible="true">clientId</a>
+            <b is-accessible="true">clientId</b>
+        </field>
+    </mapping>
+
+    <mapping map-id="productToProductDTO">
+        <class-a>agenda.model.Product</class-a>
+        <class-b>agenda.dto.ProductDto</class-b>
+        <field>
+            <a is-accessible="true">id</a>
+            <b is-accessible="true">id</b>
+        </field>
+        <field>
+            <a is-accessible="true">nombre</a>
+            <b is-accessible="true">nombre</b>
+        </field>
+        <field>
+            <a is-accessible="true">descripcion</a>
+            <b is-accessible="true">descripcion</b>
+        </field>
+        <field>
+            <a is-accessible="true">cantDocumentos</a>
+            <b is-accessible="true">cantDocumentos</b>
+        </field>
+        <field>
+            <a is-accessible="true">fechaInicio</a>
+            <b is-accessible="true">fechaInicio</b>
+        </field>
+        <field>
+            <a is-accessible="true">fechaFin</a>
+            <b is-accessible="true">fechaFin</b>
+        </field>
+        <field>
+            <a is-accessible="true">clientId</a>
+            <b is-accessible="true">clientId</b>
+        </field>
+    </mapping>
+        <mapping map-id="productDtoToProduct">
+        <class-a>agenda.dto.ProductDto</class-a>
+        <class-b>agenda.model.Product</class-b>
+        
+        <field>
+            <a is-accessible="true">id</a>
+            <b is-accessible="true">id</b>
+        </field>
+        <field>
+            <a is-accessible="true">nombre</a>
+            <b is-accessible="true">nombre</b>
+        </field>
+        <field>
+            <a is-accessible="true">descripcion</a>
+            <b is-accessible="true">descripcion</b>
+        </field>
+        <field>
+            <a is-accessible="true">cantDocumentos</a>
+            <b is-accessible="true">cantDocumentos</b>
+        </field>
+        <field>
+            <a is-accessible="true">fechaInicio</a>
+            <b is-accessible="true">fechaInicio</b>
+        </field>
+        <field>
+            <a is-accessible="true">fechaFin</a>
+            <b is-accessible="true">fechaFin</b>
+        </field>
+        <field>
+            <a is-accessible="true">clientId</a>
+            <b is-accessible="true">clientId</b>
+        </field>
+    </mapping>
+
+</mappings>
